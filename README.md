@@ -1,2 +1,2 @@
 # Pong
-The Last Inner Circle Project of 42 Seoul
+The Final Inner Circle Project of 42 Seoul
