@@ -4,17 +4,17 @@ The Final Inner Circle Project of 42 Seoul
 
 ### Used Stack
 
-- Frontend
-###### react
-###### vite
+##### Frontend
+- react
+- vite
 
-- Backend
-###### Nest
+##### Backend
+- Nest
 
-- Data Base
-###### PostgreSQL
+##### Data Base
+- PostgreSQL
 
-- Auth
-###### JWT
-###### 42 OAuth
-###### Twilio
+##### Auth
+- JWT
+- 42 OAuth
+- Twilio
