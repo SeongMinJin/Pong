@@ -1,0 +1,37 @@
+version: "3"
+services:
+  frontend:
+    image: frontend
+    restart: always
+    container_name: frontend
+    build: app/frontend
+    init: true
+    env_file:
+      - ./.env
+    ports:
+      - 80:3000
+
+  backend:
+    image: backend
+    restart: always
+    container_name: backend
+    build: app/backend
+    init: true
+    env_file:
+      - ./.env
+    ports:
+      - 81:80
+
+  postgresql:
+    image: postgres
+    restart: always
+    user: postgres
+    env_file:
+      - ./.env
+    expose:
+      - 5432
+    healthcheck:
+      test: [ "CMD", "pg_isready" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
