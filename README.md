@@ -2,7 +2,12 @@
 The Final Inner Circle Project of 42 Seoul
 
 
+
+
 ### Used Stack
+
+##### Common
+- Typescript
 
 ##### Frontend
 - react
